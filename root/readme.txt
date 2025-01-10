@@ -33,7 +33,7 @@ README
 
 3. Bootstrap
 -------------
-   This page is using bootstrap 5. 
+   This page is using bootstrap v5.0.2
    It is using that not by referencing to the online bootstrap repository, but by downloaded bootstrap files, residing in the common/bootstrap folder,
    to ensure consistency and performance.
 
