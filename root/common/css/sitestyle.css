@@ -1,0 +1,10 @@
+/* SITESTYLE
+*
+* This sitestyle holds all css-styles that are common (shared by all pages).
+* Page-specific styles will be held in each page's folder / css
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
