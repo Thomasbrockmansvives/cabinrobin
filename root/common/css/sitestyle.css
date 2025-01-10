@@ -2,6 +2,9 @@
 *
 * This sitestyle holds all css-styles that are common (shared by all pages).
 * Page-specific styles will be held in each page's folder / css
+*
+* Primary color: #ce3923
+* Secondary color: #f8c1bc
 */
 
 body {
@@ -46,7 +49,13 @@ body {
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #f8c1bc;
+  border-radius: 4px;
+}
+
+.nav-link:active {
+  background-color: #ce3923;
+  color: white;
   border-radius: 4px;
 }
 
@@ -55,9 +64,19 @@ body {
 }
 
 .body-block {
-  background-color: gray;
-  height: 200px;
-  margin-bottom: 5px;
+  background-color: white;
+  min-height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-pg {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 900px;
 }
 
 .footer-container {

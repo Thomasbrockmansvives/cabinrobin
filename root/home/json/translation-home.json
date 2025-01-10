@@ -3,6 +3,19 @@
     "nl": "Fotografie",
     "en": "Photography"
   },
+  "nav-home": {
+    "nl": "start",
+    "en": "home"
+  },
+  "nav-about": {
+    "nl": "over",
+    "en": "about"
+  },
+  "nav-prices": {
+    "nl": "prijzen",
+    "en": "prices"
+  },
+
   "nav-language": {
     "nl": "taal",
     "en": "language"
