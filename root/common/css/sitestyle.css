@@ -16,9 +16,6 @@ body {
   margin-right: auto;
 }
 
-.header-container {
-}
-
 .navigation-container {
   height: 50px;
   background-color: white;
@@ -26,6 +23,22 @@ body {
 
 .navbar {
   padding: 1rem;
+  height: 80px;
+  padding-top: 0px;
+  border-bottom: 1px solid #ce3923;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  margin-top: 50px !important;
+  margin-bottom: 40px !important;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.navbar-brand-logo {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .navbar-toggler {
@@ -40,6 +53,8 @@ body {
 .nav-item {
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 50px !important;
+  margin-bottom: 30px !important;
 }
 
 .nav-link {
