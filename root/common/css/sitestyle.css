@@ -14,6 +14,7 @@ body {
 .page-container {
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 .navigation-container {
@@ -28,7 +29,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Mobile Styles */
 @media (max-width: 767px) {
   .navbar {
     border-bottom: none;
@@ -152,12 +152,12 @@ body {
   justify-content: center;
 }
 
-.home-pg {
+.home-prg {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 50px;
-  margin-right: 50px;
-  max-width: 900px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
 }
 
 .footer-container {
