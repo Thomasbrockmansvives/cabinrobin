@@ -24,7 +24,8 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
     if (pagetranslations[key] && pagetranslations[key][lang]) {
-      element.textContent = pagetranslations[key][lang];
+      // Use innerHTML instead of textContent
+      element.innerHTML = pagetranslations[key][lang].replace(/\n/g, "<br>");
     }
   });
   localStorage.setItem("preferredLanguage", lang);
