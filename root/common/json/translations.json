@@ -35,5 +35,17 @@
   "pg-portfolio": {
     "nl": "Portfolio: Langs de grachten stonden de oude huizen trots en statig, hun gevels weerspiegeld in het kalme water. De boten dobberden zachtjes op en neer, terwijl meeuwen boven het water cirkelden op zoek naar een kleine versnapering. De lucht was fris en schoon na de recente regenbui.",
     "en": "Portfolio: The garden behind the old stone wall was a secret paradise of wildflowers and buzzing bees. Butterflies fluttered between the roses and lavender, while a small fountain provided a gentle backdrop of flowing water. Time seemed to slow down in this peaceful corner of the world."
+  },
+  "ftr-copyright": {
+    "nl": "copyright",
+    "en": "copyright"
+  },
+  "ftr-conditions": {
+    "nl": "algemene voorwaarden",
+    "en": "general conditions"
+  },
+  "ftr-privacy": {
+    "nl": "privacy",
+    "en": "privacy"
   }
 }

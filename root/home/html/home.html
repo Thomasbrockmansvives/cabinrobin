@@ -13,11 +13,13 @@
   </head>
   <body>
     <div class="page-container">
-      
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid navbar-containerfluid">
           <a class="navbar-brand" href="#">
-            <img src="../../common/img/Logo rond robin.png" alt="Logo" height="60">
+            <img
+              src="../../common/img/Logo rond robin.png"
+              alt="Logo"
+              height="60" />
           </a>
           <button
             class="navbar-toggler mx-auto"
@@ -32,11 +34,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" data-i18n="nav-home" href="../../home/html/home.html"
-                  ></a>
+                <a
+                  class="nav-link active"
+                  data-i18n="nav-home"
+                  href="../../home/html/home.html"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-i18n="nav-about" href="../../about/html/about.html"></a>
+                <a
+                  class="nav-link"
+                  data-i18n="nav-about"
+                  href="../../about/html/about.html"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../portfolio/html/portfolio.html"
@@ -44,7 +51,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-i18n="nav-prices" href="../../prices/html/prices.html"></a>
+                <a
+                  class="nav-link"
+                  data-i18n="nav-prices"
+                  href="../../prices/html/prices.html"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../blog/html/blog.html">blog</a>
@@ -54,16 +64,30 @@
                   >contact</a
                 >
               </li>
-              
+
               <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span data-i18n="nav-language"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" onclick="setLanguage('en')">English</button></li>
-                            <li><button class="dropdown-item" onclick="setLanguage('nl')">Nederlands</button></li>
-                        </ul>
-                    </li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="languageDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span data-i18n="nav-language"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button class="dropdown-item" onclick="setLanguage('en')">
+                      English
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" onclick="setLanguage('nl')">
+                      Nederlands
+                    </button>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -74,20 +98,60 @@
           Cabin Robin
         </h1>
         <h2
-          class="display-5 site-subtitle text-center text-nowrap text-uppercase text-dark" data-i18n="site-subtitle">
-        </h2>
+          class="display-5 site-subtitle text-center text-nowrap text-uppercase text-dark"
+          data-i18n="site-subtitle"></h2>
       </div>
-      
+
       <div class="body-container">
-      <div class="body-block"><p class="home-prg" data-i18n="pg-about"></p></div>
-      <div class="body-block"><p class="home-prg" data-i18n="pg-blog"></p></div>
-      <div class="body-block"><p class="home-prg" data-i18n="pg-contact"></p></div>
-      <div class="body-block"><p class="home-prg" data-i18n="pg-portfolio"></p></div>
-      <div class="footer-container"></div>
+        <div class="body-block">
+          <p class="home-prg" data-i18n="pg-about"></p>
+        </div>
+        <div class="body-block">
+          <p class="home-prg" data-i18n="pg-blog"></p>
+        </div>
+        <div class="body-block">
+          <p class="home-prg" data-i18n="pg-contact"></p>
+        </div>
+        <div class="body-block">
+          <p class="home-prg" data-i18n="pg-portfolio"></p>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="container-fluid inside-footer">
+          <div
+            class="row justify-content-center text-center align-items-center g-2">
+            <div class="col-6 col-md-12 col-lg-2">
+              <a href="https://www.facebook.com/cabinrobin"
+                ><img src="../../common/img/facebook-icon.avif"
+              /></a>
+              <a href="https://www.instagram.com/cabinrobin/"
+                ><img src="../../common/img/instagram-icon.avif"
+              /></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              &#169;2025 by Cabin Robin
+            </div>
+            <div class="col-12 col-md-6 col-lg-1 text-center">
+              <a
+                href="../../copyright/html/copyright.html"
+                data-i18n="ftr-copyright"></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <a
+                href="../../copyright/html/algemene-voorwaarden.html"
+                data-i18n="ftr-conditions"></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-1 text-center">
+              <a
+                href="../../privacy/html/privacy.html"
+                data-i18n="ftr-privacy"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="../js/pagescript-home.js"></script>
-    <script src="../../common/js/sitescript.js"></script>
+    <script src="../../common/js/translationscript.js"></script>
     <script src="../../common/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
