@@ -179,13 +179,13 @@ body {
 /* HEADER */
 
 .site-title {
-  font-weight: 500 !important;
+  font-weight: 300 !important;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .site-subtitle {
-  font-weight: 200 !important;
+  font-weight: 100 !important;
   margin-top: 0;
   padding-top: 0;
 }

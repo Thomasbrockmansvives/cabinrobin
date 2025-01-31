@@ -63,5 +63,93 @@
   "prices-text-main": {
     "nl": "N'hésitez pas à me contacter, pour plus d'informations en français. \nhello@cabinrobin.be",
     "en": "N'hésitez pas à me contacter, pour plus d'informations en français. \nhello@cabinrobin.be"
+  },
+  "prices-category-portret-title": {
+    "nl": "portret",
+    "en": "portret"
+  },
+  "prices-category-portret-text": {
+    "nl": "<ul><li>Fotoshoot gedurende 1u op overeengekomen locatie.</li><li>Keuze tussen portretfotografie kids/adult of gezinsfotografie (1 gezin)</li><li>Je ontvangt digitaal 25 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-album (15x15)</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
+    "en": "<ul><li>Photoshoot during 1h on agreed location.</li><li>Choice between portret photography kids/adult or family (1 household)</li><li>You digitally receive 25 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini album (15x15)</li><li>Possibility to buy extra photos</li></ul>"
+  },
+  "prices-category-portret-price": {
+    "nl": "prijs: 290 Euro (incl BTW)",
+    "en": "price: 290 Euro (incl TVA)"
+  },
+  "prices-category-group-title": {
+    "nl": "groep",
+    "en": "group"
+  },
+  "prices-category-group-text": {
+    "nl": "<ul><li>Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.</li><li>Combinatie van groepsfotografie, gezinsfotografie.</li><li>Je ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-verrassingsalbum</li><li>Max. 4 gezinnen</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
+    "en": "<ul><li>Photoshoot between 1h30 and 2h on agreed location.</li><li>Combination of group photography and family photography</li><li>You digitally receive 50 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini surprisealbum (15x15)</li><li>Max. 4 households</li><li>Possibility to buy extra photos</li></ul>"
+  },
+  "prices-category-group-price": {
+    "nl": "prijs: 580 Euro (incl BTW)",
+    "en": "price: 580 Euro (incl TVA)"
+  },
+  "prices-category-wedding-title": {
+    "nl": "wedding packs",
+    "en": "wedding packs"
+  },
+  "prices-category-wedding-subtitle1": {
+    "nl": "pack 1",
+    "en": "pack 1"
+  },
+  "prices-category-wedding-subtitle2": {
+    "nl": "pack 2",
+    "en": "pack 2"
+  },
+  "prices-category-wedding-subtitle3": {
+    "nl": "pack 3",
+    "en": "pack 3"
+  },
+  "prices-category-wedding-text1": {
+    "nl": "<ul><li>Gedurende 6u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
+    "en": "<ul><li>Photography during 6h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+  },
+  "prices-category-wedding-text2": {
+    "nl": "<ul><li>Gedurende 10u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
+    "en": "<ul><li>Photography during 10h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+  },
+  "prices-category-wedding-text3": {
+    "nl": "<ul><li>Gedurende 12u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
+    "en": "<ul><li>Photography during 12h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+  },
+  "prices-category-wedding-price1": {
+    "nl": "prijs: 1500 Euro (incl BTW)",
+    "en": "price: 1500 Euro (incl TVA)"
+  },
+  "prices-category-wedding-price2": {
+    "nl": "prijs: 2500 Euro (incl BTW)",
+    "en": "price: 2500 Euro (incl TVA)"
+  },
+  "prices-category-wedding-price3": {
+    "nl": "prijs: 2750 Euro (incl BTW)",
+    "en": "price: 2750 Euro (incl TVA)"
+  },
+  "prices-category-voucher-title": {
+    "nl": "cadeaubon",
+    "en": "gift voucher"
+  },
+  "prices-category-voucher-text": {
+    "nl": "<ul><li>Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.</li><li>Combinatie van groepsfotografie, gezinsfotografie.</li><li>Je ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-verrassingsalbum</li><li>Max. 4 gezinnen</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
+    "en": "<ul><li>Photoshoot between 1h30 and 2h on agreed location.</li><li>Combination of group photography and family photography</li><li>You digitally receive 50 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini surprisealbum (15x15)</li><li>Max. 4 households</li><li>Possibility to buy extra photos</li></ul>"
+  },
+  "prices-category-voucher-price": {
+    "nl": "Prijs: 580 Euro (incl BTW)",
+    "en": "Price: 580 Euro (incl TVA)"
+  },
+  "prices-category-galery-title": {
+    "nl": "",
+    "en": ""
+  },
+  "prices-category-galery-text": {
+    "nl": "Geheel vrijblijvend is er ook de mogelijkheid om via de klantengalerij producten te bestellen. Deze zijn niet inbegrepen in de prijs van de packs.",
+    "en": "to be translated"
+  },
+  "prices-category-galery-price": {
+    "nl": "",
+    "en": ""
   }
 }
