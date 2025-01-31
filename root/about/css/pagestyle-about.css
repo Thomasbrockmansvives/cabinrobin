@@ -34,7 +34,9 @@
 }
 
 .about-title {
+  font-style: italic;
   font-size: 28px;
+  font-weight: 300;
   margin: 20px auto 60px auto;
   text-align: center;
   animation-name: fade-center;
@@ -45,6 +47,7 @@
 
 .about-body-text {
   font-size: 16px;
+  font-weight: 300;
   margin: 20px auto 100px auto;
   text-align: center;
   max-width: 800px;

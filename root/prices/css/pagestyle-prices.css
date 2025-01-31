@@ -1,7 +1,72 @@
 /* PAGESTYLE
-* HOME
+* PRICES
 *
 * This pagestyle holds css-styles specific for this page.
 * Common css-styles (shared by all pages) will be held in the sitestyle.css in the common/css folder
 */
 
+.body-block {
+  background-color: white;
+  min-height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: fade-center;
+  animation-timeline: view();
+  animation-range: entry 30% cover 50% cover 50% exit 50%;
+  animation-timing-function: ease;
+}
+
+@keyframes fade-center {
+  0%,
+  100% {
+    opacity: 0.1;
+    scale: 0.97;
+  }
+  50%,
+  80% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.img-prices {
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.prices-title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+  animation-name: fade-center;
+  animation-timeline: view();
+  animation-range: entry 30% cover 50% cover 50% exit 50%;
+  animation-timing-function: ease;
+}
+
+.prices-text-main {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px auto 100px auto;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  line-height: 1.8;
+  animation-name: fade-center;
+  animation-timeline: view();
+  animation-range: entry 30% cover 50% cover 50% exit 50%;
+  animation-timing-function: ease;
+}
+
+.price-prg {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}

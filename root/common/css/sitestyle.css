@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 
+/* make sure line breaks are respected from the translations json */
 [data-i18n] {
   white-space: pre-wrap;
 }
