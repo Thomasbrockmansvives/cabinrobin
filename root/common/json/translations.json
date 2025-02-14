@@ -1,7 +1,47 @@
 {
-  "site-subtitle": {
+  "home-subtitle": {
     "nl": "Fotografie",
     "en": "Photography"
+  },
+  "about-subtitle": {
+    "nl": "Over mij",
+    "en": "About me"
+  },
+  "algemene-subtitle": {
+    "nl": "Algemene Voorwaarden",
+    "en": "General Conditions"
+  },
+  "blog-subtitle": {
+    "nl": "Blog",
+    "en": "Blog"
+  },
+  "contact-subtitle": {
+    "nl": "Contact",
+    "en": "Contact"
+  },
+  "copyright-subtitle": {
+    "nl": "Copyright",
+    "en": "Copyright"
+  },
+  "prices-subtitle": {
+    "nl": "Prijzen",
+    "en": "Prices"
+  },
+  "portfolio-subtitle": {
+    "nl": "Portfolio",
+    "en": "Portfolio"
+  },
+  "wedding-subtitle": {
+    "nl": "Huwelijken",
+    "en": "Weddings"
+  },
+  "kids-subtitle": {
+    "nl": "Kinderen",
+    "en": "Kids"
+  },
+  "family-subtitle": {
+    "nl": "Familie",
+    "en": "Family"
   },
   "nav-home": {
     "nl": "start",

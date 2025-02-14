@@ -5,8 +5,6 @@
 * Common css-styles (shared by all pages) will be held in the sitestyle.css in the common/css folder
 */
 
-
-
 .body-block {
   background-color: white;
   min-height: 200px;
@@ -47,11 +45,6 @@ a {
   max-height: 500px;
   object-fit: cover;
   aspect-ratio: attr(width) / attr(height);
-}
-
-.radius img {
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
 }
 
 @media (max-width: 991px) {
