@@ -46,9 +46,6 @@ a {
   max-height: 500px;
 }
 
-.bridged img {
-}
-
 @media (max-width: 991px) {
   .body-block {
     max-height: none;
