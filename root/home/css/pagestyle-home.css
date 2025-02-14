@@ -5,7 +5,7 @@
 * Common css-styles (shared by all pages) will be held in the sitestyle.css in the common/css folder
 */
 
-<<<<<<< HEAD =======>>>>>>>3c83a41ff72d046f97c7aeabf8560306d33a84 .body-block {
+.body-block {
   background-color: white;
   min-height: 200px;
   max-height: 500px;
@@ -46,14 +46,7 @@ a {
   max-height: 500px;
 }
 
-<<<<<<< HEAD ======= .bridged img {
-  border-radius: 10px;
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
-}
-
-.rounded img {
-  border-radius: 10px;
+.bridged img {
 }
 
 @media (max-width: 991px) {
