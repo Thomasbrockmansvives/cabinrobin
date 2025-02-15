@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="../../common/bootstrap/bootstrap.min.css" >
+    <meta
+      name="Cabin Robin homepage"
+      content="from this homepage, you can easily discover the different sections of the website of Cabin Robin, photography." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../common/bootstrap/bootstrap.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
@@ -28,14 +31,17 @@
   </head>
   <body>
     <div class="page-container">
-<!-- NAVIGATION -->      
+      <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid navbar-containerfluid">
-          <a class="navbar-brand" href="#">
+          <a
+            class="navbar-brand"
+            href="../../home/html/home.html"
+            title="home-page">
             <img
               src="../../common/img/Logo-rond-robin.png"
               alt="Logo"
-              height="60" >
+              height="60" />
           </a>
           <button
             class="navbar-toggler mx-auto"
@@ -54,6 +60,7 @@
                   class="nav-link active"
                   data-i18n="nav-home"
                   href="../../home/html/home.html"
+                  title="home"
                   >home</a
                 >
               </li>
@@ -62,11 +69,15 @@
                   class="nav-link"
                   data-i18n="nav-about"
                   href="../../about/html/about.html"
+                  title="about me"
                   >about</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../portfolio/html/portfolio.html"
+                <a
+                  class="nav-link"
+                  href="../../portfolio/html/portfolio.html"
+                  title="portfolio"
                   >portfolio</a
                 >
               </li>
@@ -75,14 +86,23 @@
                   class="nav-link"
                   data-i18n="nav-prices"
                   href="../../prices/html/prices.html"
+                  title="prices"
                   >prijzen</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../blog/html/blog.html">blog</a>
+                <a
+                  class="nav-link"
+                  href="../../blog/html/blog.html"
+                  title="blog"
+                  >blog</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../contact/html/contact.html"
+                <a
+                  class="nav-link"
+                  href="../../contact/html/contact.html"
+                  title="contact"
                   >contact</a
                 >
               </li>
@@ -94,7 +114,8 @@
                   id="languageDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                  title="language chooser dropdown">
                   <span data-i18n="nav-language"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -114,8 +135,8 @@
           </div>
         </div>
       </nav>
-<!-- HEADER -->      
-      <div class="header-container">
+      <!-- HEADER -->
+      <header class="header-container">
         <div class="header-background">
           <div class="background-circle"></div>
         </div>
@@ -128,17 +149,17 @@
           data-i18n="home-subtitle">
           Fotografie
         </h2>
-      </div>
-<!-- BODY -->
-      <div class="body-container">
-        <a href="../../about/html/about.html">
+      </header>
+      <!-- BODY -->
+      <main class="body-container">
+        <a href="../../about/html/about.html" title="about Cabin Robin">
           <div class="body-block">
             <div class="row align-items-center">
               <div class="col-12 col-lg-4">
                 <div class="img-wrapper">
                   <img
                     src="../img/home-image-1.avif"
-                    alt="picture of a couple sitting next to each other" >
+                    alt="picture of a couple sitting next to each other" />
                 </div>
               </div>
               <div class="col-12 col-lg-8">
@@ -149,10 +170,9 @@
             </div>
           </div>
         </a>
-        <a href="../../blog/html/blog.html">
+        <a href="../../blog/html/blog.html" title="blog">
           <div class="body-block rouge">
             <div class="row align-items-center">
-              
               <div class="col-12 col-lg-8">
                 <p class="home-prg" data-i18n="pg-blog">
                   Hier komt tekst over de pagina blog
@@ -162,20 +182,20 @@
                 <div class="img-wrapper rounded">
                   <img
                     src="../img/home-image-2.avif"
-                    alt="couple with child in corn field in black and white" >
+                    alt="couple with child in corn field in black and white" />
                 </div>
               </div>
             </div>
           </div>
         </a>
-        <a href="../../portfolio/html/portfolio.html">
+        <a href="../../portfolio/html/portfolio.html" title="portfolio">
           <div class="body-block">
             <div class="row align-items-center">
               <div class="col-12 col-lg-4">
                 <div class="img-wrapper rounded">
                   <img
                     src="../img/home-image-3.avif"
-                    alt="close up of boy with blue eyes" >
+                    alt="close up of boy with blue eyes" />
                 </div>
               </div>
               <div class="col-12 col-lg-8">
@@ -186,10 +206,9 @@
             </div>
           </div>
         </a>
-        <a href="../../contact/html/contact.html">
+        <a href="../../contact/html/contact.html" title="contact">
           <div class="body-block rouge">
             <div class="row align-items-center">
-              
               <div class="col-12 col-lg-8">
                 <p class="home-prg" data-i18n="pg-contact">
                   Hier komt tekst over de pagina contact
@@ -199,25 +218,35 @@
                 <div class="img-wrapper rounded">
                   <img
                     src="../img/home-image-4.avif"
-                    alt="child before old house blowing a flower away in black and white" >
+                    alt="child before old house blowing a flower away in black and white" />
                 </div>
               </div>
             </div>
           </div>
         </a>
-      </div>
-<!-- FOOTER -->      
-      <div class="footer-container">
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer-container">
         <div class="container-fluid inside-footer">
           <div
             class="row justify-content-center text-center align-items-center g-2">
             <div class="col-6 col-md-12 col-lg-2">
-              <a href="https://www.facebook.com/cabinrobin" target="_blank"
-                ><img src="../../common/img/facebook-icon.avif" alt="facebook icon"
-              ></a>
-              <a href="https://www.instagram.com/cabinrobin/" target="_blank"
-                ><img src="../../common/img/instagram-icon.avif" alt="instagram icon"
-              ></a>
+              <a
+                href="https://www.facebook.com/cabinrobin"
+                target="_blank"
+                title="facebook cabin robin"
+                ><img
+                  src="../../common/img/facebook-icon.avif"
+                  alt="facebook icon"
+              /></a>
+              <a
+                href="https://www.instagram.com/cabinrobin/"
+                target="_blank"
+                title="instagram cabin robin"
+                ><img
+                  src="../../common/img/instagram-icon.avif"
+                  alt="instagram"
+              /></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
               &#169;2025 by Cabin Robin
@@ -225,21 +254,24 @@
             <div class="col-12 col-md-6 col-lg-1 text-center">
               <a
                 href="../../copyright/html/copyright.html"
-                data-i18n="ftr-copyright"></a>
+                data-i18n="ftr-copyright"
+                title="copyright"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
               <a
                 href="../../algemene-voorwaarden/html/algemene-voorwaarden.html"
-                data-i18n="ftr-conditions"></a>
+                data-i18n="ftr-conditions"
+                title="general conditions"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-1 text-center">
               <a
                 href="../../privacy/html/privacy.html"
-                data-i18n="ftr-privacy"></a>
+                data-i18n="ftr-privacy"
+                title="privacy"></a>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
 
     <script src="../../common/js/translationscript.js"></script>
