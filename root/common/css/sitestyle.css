@@ -192,6 +192,47 @@ body {
   border-radius: 4px;
 }
 
+.custom-hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.custom-hamburger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ce3923;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-hamburger-line:nth-child(1) {
+  top: 0;
+}
+
+.custom-hamburger-line:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.custom-hamburger-line:nth-child(3) {
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .custom-hamburger {
+    display: block;
+  }
+}
+
 /* HEADER */
 
 .header-container {
