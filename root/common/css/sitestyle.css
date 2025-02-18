@@ -285,7 +285,7 @@ body {
 @media (max-width: 767px) {
   .footer-links-container {
     flex-direction: column;
-  align-items: center;
+    align-items: center;
     gap: 15px;
   }
 }
