@@ -130,6 +130,12 @@ body {
   animation-timeline: view();
   animation-range: entry 30% cover 50% cover 50% exit 50%;
   animation-timing-function: ease;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 992px) {
@@ -141,5 +147,73 @@ body {
 @media screen and (max-width: 576px) {
   .gallery-item {
     width: 100%;
+  }
+}
+
+/* Image Popup Styles */
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+}
+
+.popup-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  animation: fade-in 0.3s ease;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.close-button:hover {
+  color: #ce3923;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

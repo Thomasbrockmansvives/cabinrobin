@@ -86,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
             percentPosition: true,
             gutter: 10,
           });
+
+          // Make images clickable after Masonry is initialized
+          makeImagesClickable();
         });
       } catch (error) {
         console.error("Error initializing Masonry:", error);
@@ -99,4 +102,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Start loading images
   loadGalleryImages();
+
+  // Image Popup Functionality
+  const popup = document.getElementById("imagePopup");
+  const popupImg = document.getElementById("popupImage");
+  const closeButton = document.querySelector(".close-button");
+
+  // Function to make all gallery images clickable
+  function makeImagesClickable() {
+    const galleryImages = document.querySelectorAll(".gallery-item img");
+    galleryImages.forEach((img) => {
+      img.addEventListener("click", function () {
+        popup.style.display = "block";
+        popupImg.src = this.src;
+        popupImg.alt = this.alt;
+
+        // Prevent body scrolling when popup is open
+        document.body.style.overflow = "hidden";
+      });
+    });
+    console.log("All gallery images are now clickable");
+  }
+
+  // Close the modal
+  closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+    // Restore body scrolling
+    document.body.style.overflow = "auto";
+  });
+
+  // Close the modal when clicking outside the image
+  popup.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      popup.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+
+  // Close popup with Escape key
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && popup.style.display === "block") {
+      popup.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
 });
