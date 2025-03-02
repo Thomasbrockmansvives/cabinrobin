@@ -129,8 +129,8 @@
     "en": "portret"
   },
   "prices-category-portret-text": {
-    "nl": "<ul><li>Fotoshoot gedurende 1u op overeengekomen locatie.</li><li>Keuze tussen portretfotografie kids/adult of gezinsfotografie (1 gezin)</li><li>Je ontvangt digitaal 25 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-album (15x15)</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
-    "en": "<ul><li>Photoshoot during 1h on agreed location.</li><li>Choice between portret photography kids/adult or family (1 household)</li><li>You digitally receive 25 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini album (15x15)</li><li>Possibility to buy extra photos</li></ul>"
+    "nl": "Fotoshoot gedurende 1u op overeengekomen locatie.\nKeuze tussen portretfotografie kids/adult of gezinsfotografie (1 gezin)\nJe ontvangt digitaal 25 bewerkte foto's, die je zelf kan kiezen\nHoge resolutie\nOnline privé-platform voor foto's\nKwalitatief mini-album (15x15)\nMogelijkheid om extra foto's aan te kopen",
+    "en": "Photoshoot during 1h on agreed location.\nChoice between portret photography kids/adult or family (1 household)\nYou digitally receive 25 edited photos, chosen by yourself\nHigh resolution\nOnline private platform for photos\nQualitaty mini album (15x15)\nPossibility to buy extra photos"
   },
   "prices-category-portret-price": {
     "nl": "prijs: 290 Euro (incl BTW)",
@@ -141,8 +141,8 @@
     "en": "group"
   },
   "prices-category-group-text": {
-    "nl": "<ul><li>Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.</li><li>Combinatie van groepsfotografie, gezinsfotografie.</li><li>Je ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-verrassingsalbum</li><li>Max. 4 gezinnen</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
-    "en": "<ul><li>Photoshoot between 1h30 and 2h on agreed location.</li><li>Combination of group photography and family photography</li><li>You digitally receive 50 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini surprisealbum (15x15)</li><li>Max. 4 households</li><li>Possibility to buy extra photos</li></ul>"
+    "nl": "Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.\nCombinatie van groepsfotografie, gezinsfotografie.\nJe ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen\nHoge resolutie\nOnline privé-platform voor foto's\nKwalitatief mini-verrassingsalbum\nMax. 4 gezinnen\nMogelijkheid om extra foto's aan te kopen",
+    "en": "Photoshoot between 1h30 and 2h on agreed location.\nCombination of group photography and family photography\nYou digitally receive 50 edited photos, chosen by yourself\nHigh resolution\nOnline private platform for photos\nQualitaty mini surprisealbum (15x15)\nMax. 4 households\nPossibility to buy extra photos"
   },
   "prices-category-group-price": {
     "nl": "prijs: 580 Euro (incl BTW)",
@@ -165,16 +165,16 @@
     "en": "pack 3"
   },
   "prices-category-wedding-text1": {
-    "nl": "<ul><li>Gedurende 6u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
-    "en": "<ul><li>Photography during 6h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+    "nl": "Gedurende 6u fotograferen op overeengekomen locatie(s)\nKennismakingsgesprek\nVragenlijst\nAfstemmen met eventuele wedding planner\nPreview binnen 14 dagen\nOnline privé-platform voor foto's\nMini verrassingsalbum\nInclusief vervoersonkosten (in België)",
+    "en": "Photography during 6h on agreed location(s)\nGet-to-know meeting\nQuestion form\nAlignment with possible wedding planner\nPreview in 14 days\nOnline private platform for photos\nMini surprisealbum\nTravel expenses included (in Belgium)"
   },
   "prices-category-wedding-text2": {
-    "nl": "<ul><li>Gedurende 10u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
-    "en": "<ul><li>Photography during 10h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+    "nl": "Gedurende 10u fotograferen op overeengekomen locatie(s)\nKennismakingsgesprek\nVragenlijst\nAfstemmen met eventuele wedding planner\nPreview binnen 14 dagen\nOnline privé-platform voor foto's\nMini verrassingsalbum\nInclusief vervoersonkosten (in België)",
+    "en": "Photography during 10h on agreed location(s)\nGet-to-know meeting\nQuestion form\nAlignment with possible wedding planner\nPreview in 14 days\nOnline private platform for photos\nMini surprisealbum\nTravel expenses included (in Belgium)"
   },
   "prices-category-wedding-text3": {
-    "nl": "<ul><li>Gedurende 12u fotograferen op overeengekomen locatie(s)</li><li>Kennismakingsgesprek</li><li>Vragenlijst</li><li>Afstemmen met eventuele wedding planner</li><li>Preview binnen 14 dagen</li><li>Online privé-platform voor foto's</li><li>Mini verrassingsalbum</li><li>Inclusief vervoersonkosten (in België)</li></ul>",
-    "en": "<ul><li>Photography during 12h on agreed location(s)</li><li>Get-to-know meeting</li><li>Question form</li><li>Alignment with possible wedding planner</li><li>Preview in 14 days</li><li>Online private platform for photos</li><li>Mini surprisealbum</li><li>Travel expenses included (in Belgium)</li></ul>"
+    "nl": "Gedurende 12u fotograferen op overeengekomen locatie(s)\nKennismakingsgesprek\nVragenlijst\nAfstemmen met eventuele wedding planner\nPreview binnen 14 dagen\nOnline privé-platform voor foto's\nMini verrassingsalbum\nInclusief vervoersonkosten (in België)",
+    "en": "Photography during 12h on agreed location(s)\nGet-to-know meeting\nQuestion form\nAlignment with possible wedding planner\nPreview in 14 days\nOnline private platform for photos\nMini surprisealbum\nTravel expenses included (in Belgium)"
   },
   "prices-category-wedding-price1": {
     "nl": "prijs: 1500 Euro (incl BTW)",
@@ -193,8 +193,8 @@
     "en": "gift voucher"
   },
   "prices-category-voucher-text": {
-    "nl": "<ul><li>Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.</li><li>Combinatie van groepsfotografie, gezinsfotografie.</li><li>Je ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen</li><li>Hoge resolutie</li><li>Online privé-platform voor foto's</li><li>Kwalitatief mini-verrassingsalbum</li><li>Max. 4 gezinnen</li><li>Mogelijkheid om extra foto's aan te kopen</li></ul>",
-    "en": "<ul><li>Photoshoot between 1h30 and 2h on agreed location.</li><li>Combination of group photography and family photography</li><li>You digitally receive 50 edited photos, chosen by yourself</li><li>High resolution</li><li>Online private platform for photos</li><li>Qualitaty mini surprisealbum (15x15)</li><li>Max. 4 households</li><li>Possibility to buy extra photos</li></ul>"
+    "nl": "Fotoshoot gedurende 1u30 à 2u op overeengekomen locatie.\nCombinatie van groepsfotografie, gezinsfotografie.\nJe ontvangt digitaal 50 bewerkte foto's, die je zelf kan kiezen\nHoge resolutie\nOnline privé-platform voor foto's\nKwalitatief mini-verrassingsalbum\nMax. 4 gezinnen\nMogelijkheid om extra foto's aan te kopen",
+    "en": "Photoshoot between 1h30 and 2h on agreed location.\nCombination of group photography and family photography\nYou digitally receive 50 edited photos, chosen by yourself\nHigh resolution\nOnline private platform for photos\nQualitaty mini surprisealbum (15x15)\nMax. 4 households\nPossibility to buy extra photos"
   },
   "prices-category-voucher-price": {
     "nl": "Prijs: 580 Euro (incl BTW)",
