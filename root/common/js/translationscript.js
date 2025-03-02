@@ -9,7 +9,7 @@ let pagetranslations = {};
 
 async function loadTranslations() {
   try {
-    const response = await fetch("../../common/json/translations.json");
+    const response = await fetch("/root/common/json/translations.json");
     pagetranslations = await response.json();
     // Set initial language after translations are loaded
     const preferredLanguage = localStorage.getItem("preferredLanguage") || "nl";
