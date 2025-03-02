@@ -1,7 +1,4 @@
-/**
- * Main JavaScript for Modern Web Project
- * Includes navigation, animations, and interactive features
- */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // Create custom hamburger icon (only for mobile)
@@ -58,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle window resize - hide custom hamburger on desktop
   function handleResize() {
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 768) {
       // Bootstrap lg breakpoint
       hamburgerContainer.style.display = "none";
 
