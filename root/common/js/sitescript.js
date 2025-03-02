@@ -1,12 +1,10 @@
-/* SITE-SCRIPT
- * COMMON
- *
- * This is the javascript for the website, containing variables and methods that are used website-wide, so shared by all pages
- *
+/**
+ * Main JavaScript for Modern Web Project
+ * Includes navigation, animations, and interactive features
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Create custom hamburger icon
+  // Create custom hamburger icon (only for mobile)
   const navbarNav = document.getElementById("navbarNav");
   const hamburgerContainer = document.createElement("div");
   hamburgerContainer.classList.add("custom-hamburger");
@@ -24,20 +22,89 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hamburger click event to toggle navbar
   hamburgerContainer.addEventListener("click", () => {
     navbarNav.classList.toggle("show");
+
+    // Transform hamburger to X when menu is open
+    const lines = hamburgerContainer.querySelectorAll(".custom-hamburger-line");
+
+    if (navbarNav.classList.contains("show")) {
+      lines[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+      lines[1].style.opacity = "0";
+      lines[2].style.transform = "rotate(-45deg) translate(7px, -6px)";
+    } else {
+      lines[0].style.transform = "none";
+      lines[1].style.opacity = "1";
+      lines[2].style.transform = "none";
+    }
   });
 
-  // Scroll handling
-  let lastScrollTop = 0;
-  const headerContainer = document.querySelector(".header-container");
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      !navbarNav.contains(e.target) &&
+      !hamburgerContainer.contains(e.target) &&
+      navbarNav.classList.contains("show")
+    ) {
+      navbarNav.classList.remove("show");
 
-  window.addEventListener("scroll", () => {
-    const currentScrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
-
-    // Always show the hamburger when at the top of the page
-    if (currentScrollTop <= headerContainer.offsetHeight) {
-      hamburgerContainer.style.display = "block";
-      return;
+      // Reset hamburger icon
+      const lines = hamburgerContainer.querySelectorAll(
+        ".custom-hamburger-line"
+      );
+      lines[0].style.transform = "none";
+      lines[1].style.opacity = "1";
+      lines[2].style.transform = "none";
     }
+  });
+
+  // Handle window resize - hide custom hamburger on desktop
+  function handleResize() {
+    if (window.innerWidth >= 992) {
+      // Bootstrap lg breakpoint
+      hamburgerContainer.style.display = "none";
+
+      // If the menu was open on mobile and user switches to desktop
+      if (navbarNav.classList.contains("show")) {
+        navbarNav.classList.remove("show");
+
+        // Reset hamburger icon
+        const lines = hamburgerContainer.querySelectorAll(
+          ".custom-hamburger-line"
+        );
+        lines[0].style.transform = "none";
+        lines[1].style.opacity = "1";
+        lines[2].style.transform = "none";
+      }
+    } else {
+      hamburgerContainer.style.display = "flex";
+    }
+  }
+
+  // Initial check
+  handleResize();
+
+  // Listen for window resize
+  window.addEventListener("resize", handleResize);
+
+  // Add fade-in animation to elements as they appear in viewport
+  const animatedElements = document.querySelectorAll(
+    ".card, .portfolio-item, h2, .hero-section .row"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  animatedElements.forEach((element) => {
+    observer.observe(element);
   });
 });
