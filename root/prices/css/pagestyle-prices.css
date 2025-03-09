@@ -46,6 +46,10 @@
   margin: 50px auto;
 }
 
+.img-prices img {
+  width: 100%;
+}
+
 .prices-title {
   font-style: italic;
   font-weight: 300;

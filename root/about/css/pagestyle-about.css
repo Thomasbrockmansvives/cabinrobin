@@ -16,6 +16,10 @@
   align-self: center;
 }
 
+.img-about img {
+  width: 100%;
+}
+
 @keyframes fade-center {
   0%,
   100% {
