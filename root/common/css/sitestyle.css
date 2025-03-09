@@ -225,6 +225,7 @@ body {
 .nav-link:hover {
   background-color: #f8c1bc;
   border-radius: 4px;
+  border: none;
 }
 
 .nav-link:active {
