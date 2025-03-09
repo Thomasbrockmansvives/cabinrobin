@@ -275,6 +275,30 @@ body {
   }
 }
 
+/* Add this to your sitestyle.css file */
+
+/* Remove outline on dropdown toggle when clicked/focused */
+.dropdown-toggle:focus,
+.nav-link.dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Ensure the dropdown menu items also don't have the outline */
+.dropdown-menu .nav-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Additional fix for Bootstrap's default focus styles */
+.btn-check:focus + .btn, 
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
 /* HEADER */
 
 .header-container {
