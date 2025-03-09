@@ -129,6 +129,42 @@ body {
     width: 100%;
   }
 }
+/* Language selector styling */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.lang-option {
+  text-decoration: none;
+  color: #212529;
+  cursor: pointer;
+  padding: 0.25rem 0.25rem;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.lang-option:hover {
+  background-color: #f8c1bc;
+  border-radius: 4px;
+}
+
+.lang-option.active {
+  font-weight: bold;
+}
+
+.lang-separator {
+  margin: 0 0.2rem;
+  color: #212529;
+}
+
+@media (max-width: 767px) {
+  .language-switcher {
+    justify-content: center;
+    padding: 0.5rem 0 !important;
+  }
+}
 
 /* on bigger screen: navigation horizontally with logo on the left */
 @media (min-width: 768px) {

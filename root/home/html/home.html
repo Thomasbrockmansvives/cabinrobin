@@ -141,30 +141,24 @@
                   >contact</a
                 >
               </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="languageDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  title="language chooser dropdown">
-                  <span data-i18n="nav-language"></span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <button class="dropdown-item" onclick="setLanguage('en')">
-                      English
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" onclick="setLanguage('nl')">
-                      Nederlands
-                    </button>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <span class="nav-link p-0 language-switcher">
+                  <a
+                    href="#"
+                    class="lang-option"
+                    id="nl-language"
+                    onclick="setLanguage('nl'); return false;"
+                    >nl</a
+                  >
+                  <span class="lang-separator">|</span>
+                  <a
+                    href="#"
+                    class="lang-option"
+                    id="en-language"
+                    onclick="setLanguage('en'); return false;"
+                    >en</a
+                  >
+                </span>
               </li>
             </ul>
           </div>
