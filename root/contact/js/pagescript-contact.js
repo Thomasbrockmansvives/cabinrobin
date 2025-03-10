@@ -15,6 +15,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const formFields = document.getElementById("formFields");
   const thankYouMessage = document.getElementById("thankYouMessage");
 
+  // Create loading overlay
+  const loadingOverlay = document.createElement("div");
+  loadingOverlay.classList.add("loading-overlay");
+  loadingOverlay.innerHTML = '<div class="spinner"></div>';
+  loadingOverlay.style.display = "none";
+  document.body.appendChild(loadingOverlay);
+
+  // Show loading spinner
+  function showLoading() {
+    loadingOverlay.style.display = "flex";
+  }
+
+  // Hide loading spinner
+  function hideLoading() {
+    loadingOverlay.style.display = "none";
+  }
+
   // Calculate minimum date (1 week from today)
   const today = new Date();
   const nextWeek = new Date(today);
@@ -150,12 +167,18 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.setAttribute("disabled", "true");
       submitButton.textContent = "Sending...";
 
+      // Show loading spinner
+      showLoading();
+
       console.log("Sending email with parameters:", templateParams);
 
       // Send email using EmailJS
       emailjs.send("service_6e6ihrj", "template_d12nk6h", templateParams).then(
         function (response) {
           console.log("EMAIL SENT SUCCESS!", response.status, response.text);
+
+          // Hide loading spinner
+          hideLoading();
 
           // Hide form fields and show thank you message
           formFields.style.display = "none";
@@ -167,6 +190,9 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         function (error) {
           console.error("EMAIL SEND FAILED:", error);
+
+          // Hide loading spinner
+          hideLoading();
 
           // Show error message
           alert(
