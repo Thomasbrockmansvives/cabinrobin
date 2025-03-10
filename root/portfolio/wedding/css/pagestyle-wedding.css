@@ -217,7 +217,7 @@ body {
 }
 
 .close-button:hover {
-  color: #ce3923;
+  color: #ce3923 !important;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
