@@ -103,7 +103,6 @@ a[href^="tel:"]:hover {
 
 /* Required field */
 .form-label.required::after {
-  content: "*";
   color: #b5311f !important;
   margin-left: 4px;
 }
