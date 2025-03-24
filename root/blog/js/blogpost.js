@@ -35,6 +35,23 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       }, 100);
     }
+
+    // Override language switching behavior for this page
+    document
+      .getElementById("nl-language")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        localStorage.setItem("preferredLanguage", "nl");
+        window.location.reload();
+      });
+
+    document
+      .getElementById("en-language")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        localStorage.setItem("preferredLanguage", "en");
+        window.location.reload();
+      });
   } catch (error) {
     console.error("Error loading blog post:", error);
     showError("Error loading blog post");
