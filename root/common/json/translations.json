@@ -117,16 +117,16 @@
     "en": "Name"
   },
   "contact-name-validation": {
-    "nl": "Vul een geldige naam in",
-    "en": "Please use a valid name"
+    "nl": "Verplicht",
+    "en": "Required"
   },
   "contact-email-label": {
     "nl": "E-mail",
     "en": "E-mail"
   },
   "contact-email-validation": {
-    "nl": "Vul een geldig email-adres in",
-    "en": "Please use a valid email-adress"
+    "nl": "Verplicht",
+    "en": "Required"
   },
   "contact-toggle-label": {
     "nl": "Fotoshoot aanvragen",
@@ -137,16 +137,16 @@
     "en": "Preferred date"
   },
   "contact-date-validation": {
-    "nl": "Kies een datum (minstens een week vanaf vandaag)",
-    "en": "Choose a date (at least one week from today)"
+    "nl": "Verplicht",
+    "en": "Required"
   },
   "contact-location-label": {
     "nl": "Gewenste locatie of regio",
     "en": "Preferred location or region"
   },
   "contact-location-validation": {
-    "nl": "Vul een locatie of regio in",
-    "en": "Please fill in a preferred location or region"
+    "nl": "Verplicht",
+    "en": "Required"
   },
   "contact-question-label": {
     "nl": "Vertel me",
