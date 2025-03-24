@@ -1,0 +1,102 @@
+/* Blogpost specific styles */
+.blogpost-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.blogpost-content {
+  margin-bottom: 40px;
+}
+
+.blogpost-header {
+  margin-bottom: 20px;
+}
+
+.blogpost-category {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blogpost-date {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.blogpost-image-container {
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.blogpost-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blogpost-text {
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.blogpost-sharing {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  clear: both; /* Ensures it appears below floated elements */
+}
+
+.blogpost-sharing a {
+  transition: transform 0.2s ease;
+}
+
+.blogpost-sharing a:hover {
+  transform: scale(1.1);
+}
+
+.blogpost-sharing img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Desktop layout - portrait vs landscape handling */
+@media (min-width: 768px) {
+  .blogpost-image-container.portrait .blogpost-image {
+    width: 300px;
+  }
+
+  .blogpost-image-container.landscape .blogpost-image {
+    width: 400px;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .blogpost-image-container {
+    float: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .blogpost-image {
+    width: 100%;
+  }
+}
+
+/* Clear fix to ensure proper container sizing with floated elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Loading animation */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}

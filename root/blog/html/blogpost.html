@@ -16,6 +16,7 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="../../common/css/sitestyle.css" />
     <link rel="stylesheet" href="../css/pagestyle-blog.css" />
+    <link rel="stylesheet" href="../css/pagestyle-blogpost.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -47,6 +48,16 @@
               alt="Logo"
               height="60" />
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -202,13 +213,25 @@
           </div>
         </div>
       </header>
+
       <main class="body-container">
-        <div class="img-under-construction">
-          <img
-            src="../../common/img/underconstruction.jpg"
-            alt="page under construction" />
+        <div class="blogpost-container container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <!-- Blogpost content will be loaded here -->
+              <div id="blogpost-content" class="blogpost-content">
+                <!-- Loading placeholder -->
+                <div class="text-center py-5" id="loading">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
+
       <!-- FOOTER -->
       <footer class="footer-container">
         <div class="container-fluid inside-footer">
@@ -268,5 +291,6 @@
     <script src="../../common/js/translationscript.js"></script>
     <script src="../../common/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../../common/js/sitescript.js"></script>
+    <script src="../js/blogpost.js"></script>
   </body>
 </html>
