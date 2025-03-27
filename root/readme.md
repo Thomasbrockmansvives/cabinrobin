@@ -29,6 +29,7 @@ README
    images shared by all pages and json and javascript shared by all pages.
    There is also a folder specific for each page. In that page, we hold:
    html, which is specific for each page, pagestyling css, page-specific images, the json for the content for the specific page and space-specific javascript.
+   The start of the application will be root/home/html/home.html. The hosting server will be configured to point the visitor to that page when going to cabinrobin.be
 
 
 3. Bootstrap
