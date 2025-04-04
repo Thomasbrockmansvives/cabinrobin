@@ -513,3 +513,25 @@ body {
     margin-bottom: 5px;
   }
 }
+
+.dropdown-menu.show {
+  display: block;
+  position: absolute;
+  transform: translate3d(0px, 38px, 0px);
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+}
+
+.dropdown-menu .nav-link {
+  padding: 0.5rem 1rem;
+  color: #212529;
+}
+
+.dropdown-menu .nav-link:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-toggle.show {
+  color: #0d6efd;
+}
