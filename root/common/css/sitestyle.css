@@ -1,7 +1,5 @@
-/* SITESTYLE
-*
-* This sitestyle holds all css-styles that are common (shared by all pages).
-* Page-specific styles will be held in each page's folder / css
+/* 
+* WEBSITE-WIDE CSS STYLE
 *
 * Primary color: #ce3923
 * Secondary color: #f8c1bc
@@ -14,7 +12,6 @@
   box-sizing: border-box;
 }
 
-/* make sure line breaks are respected from the translations json */
 [data-i18n] {
   white-space: pre-wrap;
 }
@@ -63,7 +60,6 @@ body {
   font-size: 14px;
 }
 
-/* on smaller screens: navigation hamburger-style with logo on top */
 @media (max-width: 767px) {
   .body-container {
     padding-left: 5px;
@@ -134,7 +130,7 @@ body {
     width: 100%;
   }
 }
-/* Language selector styling */
+
 .language-switcher {
   display: flex;
   align-items: center;
@@ -171,7 +167,6 @@ body {
   }
 }
 
-/* on bigger screen: navigation horizontally with logo on the left */
 @media (min-width: 768px) {
   .navbar {
     border-bottom: 1px solid #ce3923;
@@ -275,9 +270,6 @@ body {
   }
 }
 
-/* Add this to your sitestyle.css file */
-
-/* Remove outline on dropdown toggle when clicked/focused */
 .dropdown-toggle:focus,
 .nav-link.dropdown-toggle:focus {
   outline: none !important;
@@ -285,15 +277,13 @@ body {
   border: none !important;
 }
 
-/* Ensure the dropdown menu items also don't have the outline */
 .dropdown-menu .nav-link:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
 
-/* Additional fix for Bootstrap's default focus styles */
-.btn-check:focus + .btn, 
+.btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
   box-shadow: none !important;
@@ -303,7 +293,7 @@ body {
 
 .header-container {
   position: relative;
-  min-height: 100px; /* adjust as needed */
+  min-height: 100px;
   width: 100%;
   overflow: hidden;
 }
@@ -435,7 +425,9 @@ body {
   font-size: 50px;
 }
 
-/* MAIN */
+/* MAIN
+* mostly implemented by page-specific css
+*/
 
 /* FOOTER */
 
@@ -516,7 +508,6 @@ body {
   margin: 0 auto;
 }
 
-/* on small screens, different margin */
 @media (max-width: 991px) {
   .inside-footer .row > div {
     margin-bottom: 5px;

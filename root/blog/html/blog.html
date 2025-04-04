@@ -78,10 +78,26 @@
         </div>
       </header>
       <main class="body-container">
-        <div class="img-under-construction">
-          <img
-            src="../../common/img/underconstruction.jpg"
-            alt="page under construction" />
+        <!-- Blog posts container -->
+        <div class="blog-container">
+          <!-- Category filters with mobile toggle -->
+          <div class="blog-filter">
+            <button class="blog-filter-toggle" id="filter-toggle">
+              Filter
+            </button>
+            <div class="blog-filter-options" id="filter-options">
+              <!-- Category checkboxes will be added here dynamically -->
+            </div>
+          </div>
+
+          <!-- Blog posts will be rendered here -->
+          <div class="blog-posts">
+            <div class="text-center">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <!-- FOOTER -->
@@ -89,10 +105,10 @@
       <footer id="footer-placeholder"></footer>
     </div>
 
-    
     <script src="../../common/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/root/common/js/components.js"></script>
     <script src="../../common/js/sitescript.js"></script>
     <script src="../../common/js/translationscript.js"></script>
+    <script src="../js/blog.js"></script>
   </body>
 </html>

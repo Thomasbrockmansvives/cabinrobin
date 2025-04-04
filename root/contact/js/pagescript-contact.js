@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize EmailJS
+  /*
+   * CONTACT PAGE-SPECIFIC JAVASCRIPT
+   * form-control, validations and email-sending using emailjs
+   */
   emailjs.init("r6pBsYE9tXesbdZ0B");
 
   // Get form elements

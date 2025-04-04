@@ -1,4 +1,7 @@
-
+/*
+ * WEBSITE-WIDE JAVASCRIPT
+ * Used on every page for the hamburger icon on mobile (custom icon) and responsiveness
+ */
 
 document.addEventListener("DOMContentLoaded", () => {
   // Create custom hamburger icon (only for mobile)

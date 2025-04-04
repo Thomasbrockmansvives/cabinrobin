@@ -1,8 +1,6 @@
-/* TRANSLATION-SCRIPT
- * COMMON
- *
- * This is the javascript, managing translations for the whole website
- *
+/*
+ * TRANSLATION JAVASCRIPT
+ *  to set correct translations and remember the setting
  */
 
 let pagetranslations = {};

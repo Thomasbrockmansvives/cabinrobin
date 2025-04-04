@@ -1,5 +1,10 @@
+/*
+ * BLOG(POST) JAVASCRIPT
+ * get post based on url parameter (ID), translate, create html structure and load image
+ */
+
 document.addEventListener("DOMContentLoaded", async function () {
-  // Get the post ID from the URL
+  // Get the post ID from the URL as a parameter
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get("id");
 
