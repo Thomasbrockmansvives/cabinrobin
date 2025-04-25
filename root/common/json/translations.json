@@ -43,6 +43,14 @@
     "nl": "Familie",
     "en": "Family"
   },
+  "calendly-title": {
+    "nl": "Boek een intake",
+    "en": "Book an intake"
+  },
+  "calendly-subtitle": {
+    "nl": "Boek een intake om een mogelijke huwelijks-fotoshoot te bespreken",
+    "en": "Book an intake meeting to discuss a possible wedding photoshoot"
+  },
   "nav-home": {
     "nl": "start",
     "en": "home"
