@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const formFields = document.getElementById("formFields");
   const thankYouMessage = document.getElementById("thankYouMessage");
 
+  // Track if form has been submitted
+  let formSubmitAttempted = false;
+
   // Create loading overlay
   const loadingOverlay = document.createElement("div");
   loadingOverlay.classList.add("loading-overlay");
@@ -53,76 +56,110 @@ document.addEventListener("DOMContentLoaded", function () {
       dateInput.removeAttribute("required");
       locationInput.removeAttribute("required");
     }
-    validateForm();
+    // Only validate if form submission has been attempted
+    if (formSubmitAttempted) {
+      validateForm(true);
+    } else {
+      // Still check if form is valid to enable/disable submit button
+      validateForm(false);
+    }
   }
 
   // Validate name (no numbers allowed)
-  function validateName() {
+  function validateName(showValidation) {
     const nameRegex = /^[^0-9]*$/;
     const isValid = nameInput.value && nameRegex.test(nameInput.value);
-    if (!isValid) {
-      nameInput.classList.add("is-invalid");
-      nameInput.classList.remove("is-valid");
+
+    if (showValidation) {
+      if (!isValid) {
+        nameInput.classList.add("is-invalid");
+        nameInput.classList.remove("is-valid");
+      } else {
+        nameInput.classList.remove("is-invalid");
+        nameInput.classList.add("is-valid");
+      }
     } else {
       nameInput.classList.remove("is-invalid");
-      nameInput.classList.add("is-valid");
+      nameInput.classList.remove("is-valid");
     }
+
     return isValid;
   }
 
   // Validate email
-  function validateEmail() {
+  function validateEmail(showValidation) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isValid = emailInput.value && emailRegex.test(emailInput.value);
-    if (!isValid) {
-      emailInput.classList.add("is-invalid");
-      emailInput.classList.remove("is-valid");
+
+    if (showValidation) {
+      if (!isValid) {
+        emailInput.classList.add("is-invalid");
+        emailInput.classList.remove("is-valid");
+      } else {
+        emailInput.classList.remove("is-invalid");
+        emailInput.classList.add("is-valid");
+      }
     } else {
       emailInput.classList.remove("is-invalid");
-      emailInput.classList.add("is-valid");
+      emailInput.classList.remove("is-valid");
     }
+
     return isValid;
   }
 
   // Validate date
-  function validateDate() {
+  function validateDate(showValidation) {
     if (photoshootToggle.checked) {
       const selectedDate = new Date(dateInput.value);
       const isValid = dateInput.value && selectedDate >= nextWeek;
-      if (!isValid) {
-        dateInput.classList.add("is-invalid");
-        dateInput.classList.remove("is-valid");
+
+      if (showValidation) {
+        if (!isValid) {
+          dateInput.classList.add("is-invalid");
+          dateInput.classList.remove("is-valid");
+        } else {
+          dateInput.classList.remove("is-invalid");
+          dateInput.classList.add("is-valid");
+        }
       } else {
         dateInput.classList.remove("is-invalid");
-        dateInput.classList.add("is-valid");
+        dateInput.classList.remove("is-valid");
       }
+
       return isValid;
     }
     return true;
   }
 
   // Validate location
-  function validateLocation() {
+  function validateLocation(showValidation) {
     if (photoshootToggle.checked) {
       const isValid = locationInput.value.trim() !== "";
-      if (!isValid) {
-        locationInput.classList.add("is-invalid");
-        locationInput.classList.remove("is-valid");
+
+      if (showValidation) {
+        if (!isValid) {
+          locationInput.classList.add("is-invalid");
+          locationInput.classList.remove("is-valid");
+        } else {
+          locationInput.classList.remove("is-invalid");
+          locationInput.classList.add("is-valid");
+        }
       } else {
         locationInput.classList.remove("is-invalid");
-        locationInput.classList.add("is-valid");
+        locationInput.classList.remove("is-valid");
       }
+
       return isValid;
     }
     return true;
   }
 
   // Validate form and toggle submit button
-  function validateForm() {
-    const isNameValid = validateName();
-    const isEmailValid = validateEmail();
-    const isDateValid = validateDate();
-    const isLocationValid = validateLocation();
+  function validateForm(showValidation = false) {
+    const isNameValid = validateName(showValidation);
+    const isEmailValid = validateEmail(showValidation);
+    const isDateValid = validateDate(showValidation);
+    const isLocationValid = validateLocation(showValidation);
 
     if (isNameValid && isEmailValid && isDateValid && isLocationValid) {
       submitButton.removeAttribute("disabled");
@@ -131,26 +168,28 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.setAttribute("disabled", "");
       submitButton.classList.remove("active");
     }
+
+    return isNameValid && isEmailValid && isDateValid && isLocationValid;
   }
 
-  // Event listeners for form validation
+  // Event listeners for form validation (without showing validation errors)
   photoshootToggle.addEventListener("change", togglePhotoshootFields);
-  nameInput.addEventListener("input", validateForm);
-  emailInput.addEventListener("input", validateForm);
-  dateInput.addEventListener("input", validateForm);
-  locationInput.addEventListener("input", validateForm);
+  nameInput.addEventListener("input", () => validateForm(formSubmitAttempted));
+  emailInput.addEventListener("input", () => validateForm(formSubmitAttempted));
+  dateInput.addEventListener("input", () => validateForm(formSubmitAttempted));
+  locationInput.addEventListener("input", () =>
+    validateForm(formSubmitAttempted)
+  );
 
   // Form submission with EmailJS
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Validate form before submission
-    if (
-      validateName() &&
-      validateEmail() &&
-      validateDate() &&
-      validateLocation()
-    ) {
+    // Set flag to indicate form submission was attempted
+    formSubmitAttempted = true;
+
+    // Validate form before submission (and show validation errors)
+    if (validateForm(true)) {
       // Prepare EmailJS template parameters
       const templateParams = {
         from_name: nameInput.value,
@@ -190,6 +229,9 @@ document.addEventListener("DOMContentLoaded", function () {
           // Reset submit button
           submitButton.removeAttribute("disabled");
           submitButton.textContent = "Verstuur";
+
+          // Reset form submission attempt flag
+          formSubmitAttempted = false;
         },
         function (error) {
           console.error("EMAIL SEND FAILED:", error);

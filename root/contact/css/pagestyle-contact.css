@@ -73,6 +73,13 @@ a[href^="tel:"]:hover {
   font-weight: 500;
 }
 
+/* Add red star for required fields */
+.form-label.required::after {
+  content: "*";
+  color: #b5311f;
+  margin-left: 4px;
+}
+
 .form-control {
   font-size: 14px;
 }
@@ -96,11 +103,6 @@ a[href^="tel:"]:hover {
   background-image: none !important;
 }
 
-.form-label.required::after {
-  color: #b5311f !important;
-  margin-left: 4px;
-}
-
 .form-check-input {
   cursor: pointer;
 }
@@ -117,6 +119,12 @@ a[href^="tel:"]:hover {
 
 .invalid-feedback {
   font-size: 12px;
+  display: none;
+}
+
+/* Only show invalid feedback when is-invalid class is present */
+.form-control.is-invalid + .invalid-feedback {
+  display: block;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
