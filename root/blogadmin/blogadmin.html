@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Admin Panel</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="admin.css" />
+    <style>
+      /* Ensure JSON section is visible */
+      #json-output-section {
+        display: block !important;
+      }
+      #copy-json-btn {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Login Screen -->
+    <div id="login-container" class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h3 class="text-center mb-0">Blog Admin Login</h3>
+            </div>
+            <div class="card-body">
+              <form id="login-form">
+                <div class="alert alert-danger d-none" id="login-error">
+                  Invalid username or password
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required />
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-container" class="container mt-4 d-none">
+      <header class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Blog Admin Panel</h1>
+        <button id="logout-btn" class="btn btn-outline-danger">Logout</button>
+      </header>
+
+      <!-- Language Toggle -->
+      <div class="mb-3 text-end">
+        <div class="btn-group" role="group">
+          <button
+            type="button"
+            class="btn btn-outline-primary active"
+            id="lang-en">
+            English
+          </button>
+          <button type="button" class="btn btn-outline-primary" id="lang-nl">
+            Nederlands
+          </button>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="mb-3">
+        <button class="btn btn-primary" id="new-post-btn">New Post</button>
+        <button class="btn btn-secondary" id="load-posts-btn">
+          Refresh Posts
+        </button>
+      </div>
+
+      <!-- Post List -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h5>Post List</h5>
+            </div>
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush" id="post-list">
+                <!-- Posts will be loaded here -->
+                <li class="list-group-item text-center">Loading posts...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card" id="post-details-card">
+            <div class="card-header bg-primary text-white">
+              <h5 id="form-title">Post Details</h5>
+            </div>
+            <div class="card-body">
+              <form id="post-form">
+                <div class="mb-3">
+                  <label for="post-id" class="form-label">Post ID</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="post-id"
+                    required />
+                  <div class="form-text">Unique identifier for the post</div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="title-en" class="form-label"
+                      >Title (English)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="title-en"
+                      required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="title-nl" class="form-label"
+                      >Title (Nederlands)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="title-nl"
+                      required />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="category-en" class="form-label"
+                      >Category (English)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="category-en"
+                      required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="category-nl" class="form-label"
+                      >Category (Nederlands)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="category-nl"
+                      required />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="image" class="form-label">Image Filename</label>
+                  <input type="text" class="form-control" id="image" required />
+                  <div class="form-text">
+                    Enter the filename of the image (e.g., "image.jpg")
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="text-en" class="form-label"
+                    >Content (English)</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="text-en"
+                    rows="5"
+                    required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label for="text-nl" class="form-label"
+                    >Content (Nederlands)</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="text-nl"
+                    rows="5"
+                    required></textarea>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <button type="submit" class="btn btn-success" id="save-btn">
+                      Save
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="cancel-btn">
+                      Cancel
+                    </button>
+                  </div>
+                  <button type="button" class="btn btn-danger" id="delete-btn">
+                    Delete
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JSON Output -->
+      <div class="card mt-4" id="json-output-section">
+        <div
+          class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">
+            JSON Output - Save This to /root/blog/json/blogposts.json
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="alert alert-info mb-3">
+            <p class="mb-2">
+              The JSON has been updated with your changes. To save these
+              changes:
+            </p>
+            <ol class="mb-0">
+              <li>Copy the json</li>
+              <li>Paste the json in a new text document using notepad</li>
+              <li>Save it as "blogposts.json</li>
+              <li>Upload it using your ftp-tool to /root/blog/json/</li>
+            </ol>
+          </div>
+          <button class="btn btn-primary btn-lg w-100 mb-3" id="copy-json-btn">
+            <i class="bi bi-clipboard"></i> Copy JSON to Clipboard
+          </button>
+          <pre id="json-preview" class="bg-light p-3 rounded"></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Area -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="notification-toast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto" id="toast-title">Notification</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toast-message">Message goes here</div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="admin.js"></script>
+  </body>
+</html>
