@@ -1,5 +1,36 @@
 /* 
-* PRIVACY PAGE-SPECIFIC CSS STYLE
-*
-* 
+* PRIVACY PAGE-SPECIFIC CSS STYLES
 */
+
+.img-about {
+  animation-name: fade-center;
+  animation-timeline: view();
+  animation-range: entry 30% cover 50% cover 50% exit 50%;
+  animation-timing-function: ease;
+  max-width: 500px;
+  width: 100%;
+  margin: 60px auto 80px auto;
+  align-self: center;
+}
+
+.img-about img {
+  width: 100%;
+}
+
+.privacy-title {
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 20px auto 60px auto;
+  text-align: center;
+}
+
+.privacy-body-text {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px auto 100px auto;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  line-height: 1.8;
+}
