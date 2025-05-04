@@ -36,8 +36,12 @@
     "en": "Weddings"
   },
   "wedding-calendly-text": {
-    "nl": "Klik hier om direct een intake van 30 minuutjes te boeken (via google meet) om een mogelijke huwelijksfotoshoot te bespreken.",
-    "en": "Click here to book immediately an intake meeting of 30 minutes (using google meet) to discuss a possible wedding photoshoot."
+    "nl": "Klik hier om direct een intake van 30 minuutjes te boeken om een mogelijke huwelijksfotoshoot te bespreken.",
+    "en": "Click here to book immediately an intake meeting of 30 minutes to discuss a possible wedding photoshoot."
+  },
+  "wedding-calendly-button": {
+    "nl": "intake boeken",
+    "en": "book an intake"
   },
   "kids-subtitle": {
     "nl": "Kinderen",

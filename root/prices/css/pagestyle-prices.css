@@ -103,3 +103,57 @@
   padding: 10px;
   margin-bottom: 20px;
 }
+
+
+.calendly-section {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendly-section p {
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; 
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.portfolio-navigation-button {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #ce3923;
+  color: #ce3923;
+  font-size: 16px !important;
+  padding-top: 12px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  
+  margin: 10px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.portfolio-navigation-button:hover {
+  border: 2px solid #f8c1bc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #f8c1bc;
+}
