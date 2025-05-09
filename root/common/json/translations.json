@@ -88,13 +88,41 @@
     "nl": "taal",
     "en": "language"
   },
-  "pg-about": {
-    "nl": "About: De kleine kat liep door de tuin, spelend met de vallende bladeren. Het was een warme herfstdag en de zon scheen zachtjes door de bomen. De vogels zongen hun laatste liedjes voordat de winter zou komen, en ergens in de verte blafte een hond vrolijk.",
-    "en": "About: The old clocktower stood tall against the evening sky, its shadows stretching across the cobblestone street below. Pigeons gathered around its base, pecking at invisible crumbs while the autumn wind rustled through the nearby trees. The sound of distant church bells echoed through the quiet neighborhood."
+  "open-slots-text": {
+    "nl": "We hebben nog enkele plekken vrij voor fotoshoots dit seizoen. Mis je kans niet om die bijzondere momenten vast te leggen! Bekijk onze prijzen of neem contact met ons op om je perfecte fotosessie te plannen.",
+    "en": "We still have a few open slots for photoshoots this season. Don't miss your chance to capture those special moments! Check our pricing options or contact us today to start planning your perfect photography session."
   },
-  "pg-blog": {
-    "nl": "Blog: In het kleine café aan de gracht zaten mensen te genieten van hun warme chocolademelk. De geur van versgebakken appeltaart dreef door de lucht, terwijl buiten de wind speelde met de gordijnen. De oude klok aan de muur tikte rustig door, markeerde elke seconde van deze vredige middag.",
-    "en": "Blog: Inside the antique bookshop, dust particles danced in the streams of sunlight that filtered through the windows. The wooden shelves creaked with the weight of countless stories, their leather spines telling tales of adventures yet to be discovered. The shopkeeper hummed softly as she arranged a new display of first editions."
+  "open-slots-prices-button": {
+    "nl": "Prijzen Bekijken",
+    "en": "View Prices"
+  },
+  "open-slots-contact-button": {
+    "nl": "Contact Opnemen",
+    "en": "Contact Us"
+  },
+  "about-summary-text": {
+    "nl": "Ik hou van kleur, simpel en natuur, maar vooral van echtheid. Bij elke foto zoek ik naar de authentieke essentie van de persoon voor mij. De natuur is mijn studio - een keuze die spontaniteit bevordert en mensen toont zoals ze echt zijn. Ik specialiseer me in kinderfotografie en huwelijken, aangetrokken door de fantasie en expressie van kinderen, en de mooie connecties en emoties bij huwelijksfotografie. Ik bewerk alleen in Lightroom, zonder Photoshop, om de natuurlijke schoonheid te behouden.",
+    "en": "I love color, simplicity, and nature, but above all authenticity. With every photo, I seek to capture the genuine essence of the person before me. Nature is my studio - a choice that enhances spontaneity and reveals people as they truly are. I specialize in children's photography and weddings, drawn to the imagination and expressions of children, and the beautiful connections and emotions in wedding photography. I edit only in Lightroom, preserving natural beauty without heavy Photoshop manipulation."
+  },
+  "about-button": {
+    "nl": "Over Mij",
+    "en": "About Me"
+  },
+  "portfolio-intro-text": {
+    "nl": "Bekijk onze portfolio om het volledige bereik van ons fotografiewerk te zien. Blader door onze collecties met intieme portretten, hartverwarmende familiesessies en onvergetelijke huwelijksmomenten.",
+    "en": "Explore our portfolio to see the full range of our photography work. Browse through our collections featuring intimate portraits, heartwarming family sessions, and unforgettable wedding moments."
+  },
+  "portfolio-button-portrait": {
+    "nl": "Portretten",
+    "en": "Portraits"
+  },
+  "portfolio-button-family": {
+    "nl": "Familie",
+    "en": "Family"
+  },
+  "portfolio-button-wedding": {
+    "nl": "Huwelijk",
+    "en": "Wedding"
   },
   "pg-contact": {
     "nl": "Contact: De fietsen stonden netjes in het rek voor de bibliotheek, glimmend in het middaglicht. Binnen was het stil, alleen het zachte geritsel van pagina's die werden omgeslagen verbrak de stilte. Een oudere man zat verdiept in zijn krant, zijn leesbril op het puntje van zijn neus.",

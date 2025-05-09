@@ -18,7 +18,7 @@
   animation-timeline: view();
   animation-range: entry 30% cover 50% cover 50% exit 50%;
   animation-timing-function: ease;
-  padding: 20px 40px;
+  padding: 20px 300px;
 }
 
 .body-block .img-wrapper {
@@ -43,7 +43,7 @@ a {
 
 .body-block img {
   max-width: 100%;
-  max-height: 480px;
+  max-height: 300px;
 }
 
 @media (max-width: 991px) {
@@ -52,7 +52,7 @@ a {
   }
 
   .body-block img {
-    max-height: 500px;
+    max-height: 300px;
   }
 }
 
@@ -95,4 +95,121 @@ a {
     width: calc(100%-40px);
     font-weight: 200;
   }
+}
+
+.home-prg-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.buttons-row {
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .buttons-row {
+    align-items: center;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .buttons-container {
+    align-items: center;
+  }
+}
+
+.home-navigation-button {
+  display: inline-block;
+  border: 2px solid #ce3923;
+  color: #ce3923;
+  font-size: 16px !important;
+  padding-top: 12px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 170px;
+  height: 45px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.home-navigation-button-rouge {
+  display: inline-block;
+  border: 2px solid #f8c1bc;
+  background-color: #ce3923;
+  color: #f8c1bc;
+  font-size: 16px !important;
+  padding-top: 12px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 170px;
+  height: 45px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.masonry-item {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.masonry-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+  .masonry-grid {
+    grid-gap: 5px;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  .masonry-item {
+    height: 120px;
+  }
+}
+
+.space {
+  padding-left: 10px;
 }
