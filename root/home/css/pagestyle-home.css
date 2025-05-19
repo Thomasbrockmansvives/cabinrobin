@@ -49,6 +49,7 @@ a {
 @media (max-width: 991px) {
   .body-block {
     max-height: none;
+    padding: 20px 10px;
   }
 
   .body-block img {
